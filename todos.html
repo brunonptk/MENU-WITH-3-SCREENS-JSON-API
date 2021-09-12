@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DOs</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">   
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="posts.html">Postagens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="albuns.html">Albuns</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="todos.html">TO-DOs</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>TO-DOs</h3>
+          </div>
+          <div class="col">
+            
+          </div>
+          <div class="col">
+            Filtro (Completed): 
+            <select class="form-select" aria-label="Default select example" id="completed">
+                <option value="0" selected>Todos</option>
+                <option value="1">Sim</option>
+                <option value="2">Não</option>                
+              </select>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">User_ID</th>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Completed</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+                <!--dados da tabela-->
+            </tbody>
+          </table>
+    </div>
+    <script src="src/js/todos.js"></script>
+</body>
+</html>
